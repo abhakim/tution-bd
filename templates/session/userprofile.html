@@ -1,0 +1,23 @@
+{% extends 'basic.html' %} {% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="{{user.userprofile.image.url}}" class="w-50" alt="">
+        </div>
+        <div class="col">
+            <!--<button class="btn btn-secondary"><a href="/tution/pdf/">Pdf</a></button>-->
+            <button class="btn btn-secondary"><a href="/session/tutionpro/">tution profile create</a></button> <br>
+            Name={{user.username}} <br> 
+            blood_group={{user.userprofile.blood_group}} <br> 
+            gender={{user.userprofile.gender}} <br> 
+            nationality={{user.userprofile.nationality}} <br> 
+            biodata={{user.userprofile.biodata}} <br> r
+            eligion={{user.userprofile.religion}}<br> 
+            profession={{user.userprofile.profession}} <br> 
+            birth_date={{user.userprofile.birth_date}} <br> 
+            address={{user.userprofile.address}} <br> 
+            phone={{user.userprofile.phone}} <br>
+        </div>
+    </div>
+</div>
+{% endblock body %}

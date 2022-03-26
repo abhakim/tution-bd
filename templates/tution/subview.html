@@ -1,0 +1,9 @@
+{% extends 'basic.html' %}
+{% block body %}
+
+    {{sub.name}}
+    {% for i in post %}
+    {{ i.title }} by:
+    {{ i.user.username}} <br>
+    {% endfor%}
+{% endblock body %}
